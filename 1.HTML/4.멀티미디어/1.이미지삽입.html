@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>이미지삽입</title>
+</head>
+
+<body>
+
+  <!--
+        절대 경로: 절대적으로 가리킬 수 있는 경로.
+        해당 파일이 존재하는 전체 경로.
+
+        상대 경로: 현재 존재하는 디렉토리를 기준으로
+        해당 파일까지의 위치를 가리키는 경로.
+    -->
+  <!-- <img src="C:\MyWorkspace\html-css-study\1.HTML\4.멀티미디어\images\basic.jpg" alt="송아지사진"> 절대 경로 -->
+
+  <!--Makes like a table where there is a picture and a caption bellow
+  saying what the pictures is or any other caption can be added
+  [This also makes the figure an block element having its own width and height]-->
+  <figure>
+    <img src="./images/basic.jpg" alt="송아지사진">
+    <figcaption>우리집 송아지에요~~</figcaption>
+  </figure>
+
+  <!--height는 사용하지 않는 것을 권장.
+  사진의 비율이 망가질 수 있다.
+  [상대 경로]-->
+  <img src="./images/basic.jpg" alt="송아지사진" width="200px">
+
+  <!--There is link connected to the picture making the picture a
+  hyperlink-->
+  <a href="https://www.naver.com">
+    <img src="./images/basic.jpg" alt="송아지사진">
+  </a>
+
+  <!--Example to get an image from a url-->
+  <img src="https://www.fitpetmall.com/wp-content/uploads/2023/09/shutterstock_2205178589-1-1.png" alt="고양이사진" width="500px">
+
+</body>
+
+</html>
