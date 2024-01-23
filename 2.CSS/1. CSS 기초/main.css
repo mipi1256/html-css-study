@@ -1,0 +1,11 @@
+
+/* 다른 스타일 시트에서 또 다른 스타일을 불러울 때 사용하는 문법.
+When making an extra CSS sheet you can just import it to the Main CSS and there is no 
+need to add another link into the HTML. */
+@import "./side.css";
+
+h1, p{
+  color: red;
+  background-color: orange;
+
+}
