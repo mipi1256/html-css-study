@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form 기초</title>
+</head>
+
+<body>
+
+  <!--
+    사용자가 입력한 값들을 다른 곳으로 전달하기 위해서
+    form 태그가 반드시 필요합니다.
+    action: 전송할 정보를 처리할 페이지의 url -
+    -> 웹 서버의 특정 url을 가리키게 됨.
+    You need to make a form before making any other changes if you want
+    to send the informtion that the user put in.
+    action: This is the url for the server that the information
+    will be send to. 
+    autocomplete = "off" will make the information not to show when 
+    someone already inputed information.
+  -->
+  <form action="#" autocomplete="off">
+    <!--name을 통해 추후에 서버 내부에서 해당 입력값을 지목할 수 있다.
+    Every input should have a name so the information can be
+    send to the server-->
+    <!--Its a empty space which only accepts text
+    value -> will make there be some writting on the id spot.
+    placeholder -> will make a wateramrk for what it needs to be written
+    on the spot. 
+    required -> will make the user need to write on the input no matter what-->
+    아이디: <input type="text" name="id" value="메롱메롱"> <br>
+    비밀번호: <input type="password" name="pw" placeholder="비밀번호" required> <br>
+
+    <!--If the type is a password then the text will be censored.-->
+    # 성별 <br>
+    <!-- radio, checkbox는 value를 지정해 주어야 
+      사용자가 선택한 값을 전송할 수 있다. 
+    Radio will make like a button for the input
+    also if you add a name for each radio then the program
+    will assign them into the same input meaning that the program
+    will only accept one between the radios
+    Value add the information to the server in more specific -->
+    <input type="radio" name="gender" value="male"> 남
+    <input type="radio" name="gender" value="female"> 여 <br>
+
+    # 취미 <br>
+    <!--Checkbox will make a checkbox where the user can choose
+    between the multiple choices if they are connected with a name.-->
+    <input type="checkbox" name="hobby" value="reading"> 독서
+    <input type="checkbox" name="hobby" value="sleeping"> 수면
+    <input type="checkbox" name="hobby" value="soccer"> 축구
+    <input type="checkbox" name="hobby" value="Games"> 게임 <br>
+
+    # 자기소개 <br>
+    <!--For long essay type inputs so the user can have enough
+    space to write down what it is asked to do.-->
+    <textarea cols="120" rows="10" name="introduce"></textarea> <br>
+
+    <!--mail will make the user need to write down an email no matter what. -->
+    <input type="email" name="mail" placeholder="이메일을 입력하세여."> <br>
+
+    <!--The user needs to write down their age.-->
+    <input type="number" name="age" min="1" max="200" placeholder="나이를 입력하세요"> <br>
+
+    <!--It will make a scroll or range that lets you choose-->
+    <input type="range" min="0: max="20" value="2"> <br>
+    <input type="file" name="upload"> <br>
+    <!-- submit은 사용자가 입력한 값을 form action에 지정된 경로로
+      제출하는 용도. button 태그로도 구현이 가능합니다.
+      [ <button type ="submit">회원가입<button>]
+    Submit will make a button for the information to be send
+    to the server that was written on the top of the form
+    -->
+    <input type="submit" value="회원가입">
+
+  </form>
+
+
+
+</body>
+
+</html>

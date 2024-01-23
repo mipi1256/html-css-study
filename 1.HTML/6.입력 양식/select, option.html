@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Set, Option HTML</title>
+</head>
+
+<body>
+
+  <form action="#">
+      <!--Select will open a little tab with all of the options
+      under the select tag there should be an option tag were you add 
+      all of the options that you want.
+      values is added on the option tag for the information to be shorter
+      this values are not show to the user but only the people in the server
+      -->
+    <select name="drink">
+      <!--optgroup will make the list into order
+      give them a label so different inputs are divided into their
+      own. -->
+      <optgroup label="Coffe">
+        <option value="ame">Americano</option>
+        <option value="esp">Espresso</option>
+        <option value="cl">Cafe Latte</option>
+        <option value="capp">Cappuccino</option>
+      </optgroup>
+
+      <optgroup label="Non-Coffe">
+        <option value="orange">Orange Juice</option>
+        <option value="apple">Apple Juice</option>
+        <option value="grape">Grape Juice</option>
+      </optgroup>
+    </select>
+
+    <br><br><br>
+
+    <hr>
+
+    <input type="text" list="fruits">
+
+    <!--Datalist it almost the same as select and option
+      but the user had to put the information in. Also, you need to connect the input
+      and the data list 
+      The data list needs an id and the input needs the id from the list-->
+    <datalist id="fruits">
+      <option>Apple</option>
+      <option>Banana</option>
+      <option>Orange</option>
+      <option>Grape</option>
+      <option>Mango</option>
+    </datalist>
+    
+    <input type="submit" value="주문">
+  </form>
+
+</body>
+
+</html>
