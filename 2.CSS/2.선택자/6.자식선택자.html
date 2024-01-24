@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>자식선택자</title>
+
+  <style>
+    /* 자식 선택 you have to have the name of the parents
+    Then you put an ">" to show that its inside that parent
+    [In this case it choose the child in ul that has the class orange]
+    It doesn't select the child's child [Only its parents child] */
+    ul>.orange {
+      color: orange;
+    }
+
+    /* Inside div inside of ul and inside of li will get this style. */
+    div>ul>li {
+      font-weight: bold;
+    }
+
+    div>ul>li>ol {
+      color: yellow;
+    }
+  </style>
+</head>
+
+<body>
+
+  <h1>안녕안녕~</h1>
+  <div>
+    <ul>
+      <li>사과
+      </li>
+      <!--This doesn't get the bold style because its outside the li and its not connected with 
+      li so its not its child.-->
+      <ol>
+        <li>1번째</li>
+        <li>2번째</li>
+        <li>3번째</li>
+      </ol>
+      <li class="orange">오렌지</li>
+      <li>딸기
+        <ol>
+          <li>1번째</li>
+          <li>2번째</li>
+          <li>3번째</li>
+        </ol>
+      </li>
+    </ul>
+  </div>
+
+  <div>당근</div>
+  <p>토마토</p>
+  <span class="orange">오렌지</span>
+
+</body>
+
+</html>
