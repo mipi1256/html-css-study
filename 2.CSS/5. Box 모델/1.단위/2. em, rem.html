@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Em & Rem CSS</title>
+
+  <style>
+    html {
+      font-size: 10px;
+    }
+    body * {
+      border: 2px solid black;
+    }
+
+    /* em will multiple the amount of px in the class */
+    .container {
+      font-size: 20px;
+      width: 60em;
+    }
+
+    .parent {
+      width: 50%;
+      font-size: 2em;
+    }
+
+    /* rem will grab the pixel from the html and not from the parent
+    and from that amount of pixel it will multiple it
+    HTML default size is 16px (this number could be change) */
+    .child {
+      width: 30%;
+      font-size: 3rem;
+    }
+
+  </style>
+
+</head>
+
+<body>
+
+  <div class="container">Container
+    <div class="parent">Parent
+      <div class="child">Child1</div>
+      <div class="child">Child2</div>
+    </div>
+  </div>
+
+</body>
+
+</html>
