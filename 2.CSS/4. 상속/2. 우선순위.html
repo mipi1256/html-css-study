@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>우선순위 CSS</title>
+
+  <style>
+    #i-yellow {
+      color: yellow;
+    }
+
+    div {
+      color: red;
+      width: 200px;
+    } 
+
+    .c-green {
+      color: green;
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <div id="i-yellow" class="c-green" style="color: orange;">Hello</div>
+
+  <!--
+    !important: 무한대 점
+    인라인 스타일: 1000점
+    아이디 선택자: 100점
+    클래스 선택자: 10점
+    태그 선택자: 1점
+    전체 선택자: 0점
+
+    :hover, :active, :first-child와 같은 가상 클래스는 클래스 선택자로 취 급하여 10점이 부여됨
+    ::before, ::after와 같은 가상요소는 태그선택자로 취급되어 1점이 부여됨
+
+    :not()은 점수가 0점이 부여됩니다. 안에 아이디, 클래스 있어도 0점이 부여됩니다. 
+
+    점수가 같은 경우 가장 마지막에 해석되는 선언이 우선
+    명시도 점수는 상속보다 우선
+    !important가 적용됨
+    -->
+</body>
+
+</html>
