@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>인접형제선택자</title>
+
+  <style>
+    /* If there is a class and you want to choose its brother
+    then put a plus sign (+) */
+    .orange+li {
+      color: yellow;
+    }
+
+    /* In this case the first li won't get the style
+    but the other below it will get the style */
+    li+li {
+      font-size: 24px;
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <ul>
+    <li>딸기</li>
+    <li>사과</li>
+    <li class="orange">오렌지</li>
+    <li>망고</li>
+    <li>포도</li>
+  </ul>
+
+</body>
+
+</html>

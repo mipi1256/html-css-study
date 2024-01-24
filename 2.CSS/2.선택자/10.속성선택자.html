@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>속성선택자</title>
+
+  <style>
+    /* Choose the attribute input which has the value of hello
+    will get this style */
+    input[value=hello] {
+      width: 200px;
+      color: blue;
+    }
+
+    /* This will choose the attribute input which has the type of password
+    and will give this style */
+    input[type=password] {
+      color: red;
+      width: 100px;
+    }
+    /* This will choose the attribute input and choose the attribute that only
+    has disable and will style it */
+    input[disable] {
+      opacity: 0.2;
+    }
+
+    /* If you add a [^] in then it will choose all the class that start with btn in 
+    there name */
+    button[class^=btn]{
+      font-weight: bold;
+      border-radius: 20px;
+    }
+
+    /* If you add a [$] in then it will choose all the class that finish with 
+    success in there name */
+    button[class$=success]{
+      background: green;
+    }
+    button[class$=danger]{
+      background: red;
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <input type="text" value="hello">
+  <input type="password" value="1234">
+  <input type="text" value="disabled-text" disabled>
+
+  <button class="btn-success">Success</button>
+  <button class="btn-danger">Danger</button>
+
+</body>
+
+</html>
