@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>박스띄우기 실습 2</title>
+  <!-- reset css -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
+
+  <style>
+    /* margin 23.75 */
+
+    section {
+      width: 70%;
+      border: 5px double black;
+      margin: 30px auto 0;
+    }
+
+    section h1 {
+      text-align: center;
+      font-family: cursive;
+      font-size: 45px;
+      background: lightgrey;
+      padding: 15px;
+    }
+
+    section .intro {
+      text-align: center;
+      font-size: 17px;
+      background: black;
+      color: whitesmoke;
+      padding: 10px;
+    }
+
+    em{ 
+      color: yellow;
+    }
+
+    .gallery {
+      /* padding: 1%; */
+      background: grey;
+      float: inline-start;
+    }
+
+    section ul li {
+      width: 22.51%;
+      height: 350px;
+      float: inline-start;
+      margin: .5%;
+      padding: .3em;
+    }
+
+    p{
+      font-size: 19px;
+      padding-top: 35px;
+      font-family: serif;
+      text-align: left;
+    }
+
+    #tulip {
+      /* width: 24%; */
+      background: red;
+      text-align: justify;
+    }
+
+    #tulip .pic {
+      width: 100%;
+      height: 150px;
+      background-size: cover;
+      background-image: url(./images/tulip.jpg);
+      background-attachment: local;
+      background-position: 30%;
+    }
+
+    #jebi {
+      /* width: 24%; */
+      background: purple;
+    }
+
+    #jebi .pic {
+      width: 100%;
+      height: 150px;
+      background-size: cover;
+      background-image: url(./images/jebi.jpg);
+      background-attachment: local;
+      background-position: 60%;
+    }
+
+    #hobak {
+      /* width: 24%; */
+      background: orange;
+    }
+
+    #hobak .pic {
+      width: 100%;
+      height: 150px;
+      background-size: cover;
+      background-image: url(./images/hobak.jpg);
+      background-attachment: local;
+      background-position: 39%;
+    }
+
+    #sunflower {
+      /* width: 24%; */
+      background: yellow;
+    }
+
+    #sunflower .pic {
+      width: 100%;
+      height: 150px;
+      background-size: cover;
+      background-image: url(./images/sunflower.jpg);
+      background-attachment: local;
+      background-position: 30%;
+    }
+
+    .clearfix::after {
+      content: '';
+      display: block;
+      clear: both;
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <section class="clearfix">
+    <h1>나의 아름다운 정원</h1>
+    <p class="intro">사람들은 아마 자신에게 <em>자신감을 북돋워 주는</em>
+      표정 있는 꽃들을 선호할 것이다.</p>
+    <ul class="gallery">
+      <li id="tulip">
+        <div class="pic"></div>
+        <p>
+          너무 화려하지 않으며 고귀한 느낌을 가지고 있다.
+          붉은 색이 단연 으뜸이며 한 송이만 있어도 빼어나다.
+        </p>
+      </li>
+      <li id="jebi">
+        <div class="pic"></div>
+        <p>
+          드물게 푸른색을 띠고 있으며 작지만 시원해 보이는
+          어린 꽃이라고 할 수 있다. 여럿이 함께 있을 때 더욱 아름답다.
+        </p>
+      </li>
+      <li id="hobak">
+        <div class="pic"></div>
+        <p>
+          색도 모양도 화려하며 이름과 걸맞지 않게 아름다운 꽃으로
+          매우 완숙한 이미지를 풍기는 꽃이다.
+        </p>
+      </li>
+      <li id="sunflower">
+        <div class="pic"></div>
+        <p>
+          태양만 바라보는 일편단심의 꽃으로 얼굴이 큰 편에
+          속하며 송이가 적어야 제격이다.
+        </p>
+      </li>
+    </ul>
+  </section>
+
+</body>
+
+</html>

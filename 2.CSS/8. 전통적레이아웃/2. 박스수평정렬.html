@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>박스 수평정렬 CSS</title>
+
+  <style>
+    .box{
+      width: 150px;
+      height: 100px;
+      background: lightseagreen;
+      font-size: 30px;
+      color: #fff;
+      margin: 10px;
+      /* float will move the box into a row 
+      float: left, right, inline_start, inline_end */
+      float: left;
+    }
+
+    .newbox {
+      width: 200px;
+      height: 150px;
+      background: lightgoldenrodyellow;
+      /* Clear will register the box in top and will leave space
+      and the new box will move below
+      clear: both, left, right */
+      clear: both;
+    }
+  </style>
+
+</head>
+
+<body>
+
+<div class="box">1</div>
+<div class="box">2</div>
+<div class="box">3</div>
+<div class="newbox">4</div>
+
+</body>
+
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Float 해제 CSS</title>
+
+  <style>
+    .container{
+      width: 700px;
+      padding: 20px;
+      border: 3px solid lightcoral;
+      /* overflow: hidden; This is one way to remove the float
+      however, its not that often use because when you need to use overflow again 
+      it might ruin the code*/
+    }
+
+    .box{
+      width: 200px;
+      height: 150px;
+      border: 3px solid lightgreen;
+      background: lightgoldenrodyellow;
+      font-size: 50px;
+      float: left;
+    }
+
+    /* .clearbox {
+      clear: both;
+    } */
+
+    /* This makes the content have nothing inside and its a block plus you can fix
+    the float problem by using clear: both. Making it get rid of the float on both side */
+    .clearfix::after{
+      content: '';
+      display: block;
+      clear: both;
+    }
+  </style>
+
+</head>
+
+<body>
+
+<div class="container clearfix"> <!--Make a clearfix class-->
+  <div class="box">1</div>
+  <div class="box">2</div>
+  <!-- <div class="clearbox"></div> One way to get rid of the float however is not use often-->
+</div>
+
+</body>
+
+</html>
