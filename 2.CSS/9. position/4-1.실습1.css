@@ -1,0 +1,42 @@
+/* Position 실습1 */
+
+article {
+  width: 300px;
+  background: pink;
+  border: 2px solid #ccc;
+  padding: 10px;
+  margin: 30px auto 0;
+  position: relative;
+}
+
+article h1 {
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #080;
+  margin-bottom: 15px;
+}
+
+article .content {
+  padding-left: 10px;
+}
+
+article .content li {
+  margin-bottom: 5px;
+}
+
+article .content li a {
+  color: #666;
+  font-size: 0.9em;
+  text-decoration: none;
+}
+
+article .content li a:hover {
+  color: blue;
+  text-decoration: underline;
+}
+
+article .more {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}

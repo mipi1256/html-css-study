@@ -1,0 +1,17 @@
+#wrapper {
+  width: 50%;
+  margin: 10px auto 0;
+}
+
+#wrapper header h1 {
+  font-size: 50px;
+  background: orange;
+  box-sizing: border-box;
+  padding: 30px 45px;
+  font-family: '굴림체';
+}
+
+#wrapper header h1 span {
+  font-size: 20px;
+  
+}

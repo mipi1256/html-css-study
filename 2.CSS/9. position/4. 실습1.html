@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>실습1 Position CSS</title>
+  <!-- reset css -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
+
+  <style>
+    article {
+      width: 300px;
+      border: 2px solid lightblue;
+      margin: 20px auto 0;
+      background: lightpink;
+      padding: 10px;
+      position: relative;
+    }
+
+    article h1 {
+      font: bold 30px center;
+      color: green;
+      padding-bottom: 8px;
+      /* font-size: 40px;
+      font-family: bold;
+      text-align: center;  */
+    }
+
+    article ul {
+      font-size: 17px;
+      line-height: 1.4em;
+      box-sizing: border-box;
+      padding-left: 8px;
+    }
+
+    article ul li a{
+      text-decoration: none;
+      padding-left: 10px;
+    }
+
+    article ul li a:hover{
+      text-decoration: underline;
+      color: blue;
+    }
+
+    article div a{
+      font-size: 15px;
+    }
+
+    .absolute{
+      position: absolute;
+      right: 8px;
+      top: 20px;
+
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <article class="relative">
+    <h1>동물병원 24시</h1>
+    <ul class="content">
+      <li><a href="#">밥 먹이는 시간 지킬 것</a></li>
+      <li><a href="#">길고양이 주사 맞히기</a></li>
+      <li><a href="#">눈 아픈 동물 목에 깔때기 씌우기</a></li>
+      <li><a href="#">매일 목욕 시킬 것</a></li>
+      <li><a href="#">이름없는 애들 이름 짓지 말기</a></li>
+    </ul>
+    <div class="more absolute">
+      <a href="#">더보기</a>
+    </div>
+  </article>
+
+
+</body>
+
+</html>

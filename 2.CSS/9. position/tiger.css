@@ -1,0 +1,106 @@
+body {
+  background: gray;
+}
+
+#wrapper {
+  width: 50%;
+  margin: 10px auto 0;
+}
+
+/* Header  */
+#wrapper header h1 {
+  font-size: 30px;
+  box-sizing: border-box;
+  color: yellow;
+  /* border: 2px solid #6495ED; */
+  background: #123456;
+  padding: 15px 45px;
+  text-align: center;
+  font-family: '굴림체', serif;
+}
+
+#wrapper header h1 strong {
+  font-size: 90px;
+  color: white;
+}
+
+#wrapper header h1 span {
+  font-size: 50px;
+}
+
+#wrapper header h1 em {
+  font-size: 70px;
+  color: #ccc;
+}
+
+/* Container + Menu + Content */
+#wrapper .container {
+  /* width: auto; */
+  height: 450px;
+}
+
+#wrapper .container .menu {
+  width: 20%;
+  height: 450px;
+  box-sizing: border-box;
+  background: lightgray;
+  float: left;
+  position: relative;
+  padding: 15px 10px 0;
+  line-height: 1.9em;
+}
+
+#wrapper .container .menu a {
+  text-decoration: none;
+  color: black;
+}
+
+/* #wrapper .container .menu a{
+  text-decoration: underline;
+} */
+
+#wrapper .container .menu a:hover {
+  color: blue;
+  text-decoration: underline;
+}
+
+#wrapper .container .content {
+  width: 80%;
+  height: 450px;
+  box-sizing: border-box;
+  background: white;
+  float: right;
+}
+
+#wrapper .container .content h2 {
+  /* width: auto; */
+  background: maroon;
+  font-size: 30px;
+  color: yellow;
+  font-weight: bold;
+  font-family: cursive;
+  padding: 10px 15px;
+}
+
+#wrapper .container .content p {
+  /* width: auto; */
+  padding: 20px;
+  font-size: 16px;
+  text-align: justify;
+  font-family: serif;
+}
+
+
+/* Footer Copyright */
+#wrapper footer address {
+  color: black;
+  background: #848884;
+  padding: 15px 15px 15px 25px;
+  font-style: italic;
+}
+
+.clearfix::after {
+  content: '';
+  display: block;
+  clear: both;
+}

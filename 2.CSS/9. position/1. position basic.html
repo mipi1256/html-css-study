@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Position Basic CSS</title>
+
+  <style>
+    .container {
+      width: 400px;
+      height: 300px;
+      border: 4px dashed lightgray;
+      margin: 100px 0;
+    }
+
+    .box {
+      width: 150px;
+      height: 100px;
+      background: lightcoral;
+      border: 4px dashed orange;
+
+      /* When the position is relative it will make the element selected
+      to move to the oppositve position that you wrote down
+      left > move right / right > move left / top > move bottom / bottom > move top */
+      position: relative;
+      left: 300px;
+      /* bottom: 150px; */
+    }
+
+  </style>
+
+</head>
+
+<body>
+
+  <div class="container">
+    <div class="box"></div>
+  </div>
+
+
+</body>
+
+</html>

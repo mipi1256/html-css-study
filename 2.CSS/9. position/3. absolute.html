@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Absolute Position CSS</title>
+
+  <style>
+    .grandparent {
+      width: 400px;
+      height: 300px;
+      padding: 100px;
+      border: 4px dashed lightgrey;
+      position: relative;
+    }
+
+    .parent {
+      width: 300px;
+      height: 300px;
+      border: 4px dashed lightgreen;
+      position: absolute;
+      left: 100px;
+      top: 200px;
+    }
+
+    .child {
+      width: 120px;
+      height: 80px;
+      background: tomato;
+      border: 4px dashed lightcoral;
+      border-radius: 10px;
+      font-size: 30px;
+    }
+
+    /* When you add absolute to one element then the elements below it
+    will move up and the element that has absolute will ignore every other element
+    When the parent of the element doesn't have a position set then the absolute element 
+    will grab the screens dimension. However, if you add a position to the parent 
+    then the parent becomes the dimension. *PARENT DIMENSION*
+    right > move to the dimension to the right / the same with left, top, bottom*/
+    .absolute {
+      position: absolute;
+      right: 100px;
+      bottom: 150px;
+    }
+
+  </style>
+
+</head>
+
+<body>
+
+  <div class="grandparent">
+    <div class="parent">
+      <div class="child">1</div>
+      <div class="child absolute">2</div>
+      <div class="child">3</div>
+    </div>
+  </div>
+
+</body>
+
+</html>
