@@ -4,14 +4,103 @@
 }
 
 #wrapper header h1 {
-  font-size: 50px;
+  color: white;
+  font-size: 120px;
+  text-align: center;
+  font-weight: bold;
   background: orange;
   box-sizing: border-box;
   padding: 30px 45px;
   font-family: '굴림체';
+
 }
 
 #wrapper header h1 span {
-  font-size: 20px;
-  
+  font-size: 22px;
+  display: block;
+  box-sizing: border-box;
+}
+
+#wrapper header .stit {
+  background: #fff;
+  box-sizing: border-box;
+  padding: 2px;
+  text-align: center;
+}
+
+#wrapper .container {
+  border: 3px dashed black;
+  background: white;
+}
+
+#wrapper .container .side-menu {
+  width: 20%;
+  border: 3px dashed lightcoral;
+  float: left;
+}
+
+#wrapper .container .side-menu h3{
+  background: maroon;
+  color: white;
+  font-family: bold;
+  padding: 10px;
+}
+
+#wrapper .container .side-menu li{
+  padding: 10px;
+}
+
+#wrapper .container .side-menu li:hover {
+  text-decoration: underline;
+}
+
+#wrapper .container .side-menu a{
+  text-decoration: none;
+  color: black;
+}
+
+#wrapper .container .main-content{
+  width: 58%;
+  border: 3px dashed lightseagreen;
+  float: left;
+  background: #fff;
+}
+
+#wrapper .container .main-content .art-piece{
+  padding: 10px;
+}
+#wrapper .container .main-content .art-piece .title{
+  background: #123456;
+  padding: 10px;
+  font-family: bold;
+}
+
+#wrapper .container .main-content .art-piece .title a{
+  text-decoration: none;
+  color: white;
+}
+
+#wrapper .container .main-content .art-piece .artist {
+  font-size: 1.3em;
+  padding: 10px 0;
+  color: #123456;
+  font-family: bold;
+}
+
+#wrapper .container .main-content .art-piece .detail {
+  text-align: justify;
+  font-size: .7em;
+  color: #123456;
+}
+
+#wrapper .container .banner {
+  width: 20%;
+  border: 3px dashed lightgreen;
+  float: right;
+}
+
+.clearfix::after {
+  content: '';
+  display: block;
+  clear: both;
 }
