@@ -1,3 +1,7 @@
+body{
+  background: grey;
+}
+
 #wrapper {
   width: 50%;
   margin: 10px auto 0;
@@ -10,39 +14,48 @@
   font-weight: bold;
   background: orange;
   box-sizing: border-box;
-  padding: 30px 45px;
+  padding: 25px 50px;
   font-family: '굴림체';
 
 }
 
 #wrapper header h1 span {
-  font-size: 22px;
+  font-size: 20px;
   display: block;
   box-sizing: border-box;
 }
 
 #wrapper header .stit {
-  background: #fff;
+  background: #ccc;
   box-sizing: border-box;
   padding: 2px;
   text-align: center;
+  font-size: .9em;
 }
 
+/* 
+all of the elements inside the container will get floated left 
+.container > *{
+  float: left;
+}
+ALso its alright to give each element the float if you want to.
+*/
+
 #wrapper .container {
-  border: 3px dashed black;
+  /* border: 3px dashed black; */
   background: white;
 }
 
 #wrapper .container .side-menu {
   width: 20%;
-  border: 3px dashed lightcoral;
+  /* border: 3px dashed lightcoral; */
   float: left;
 }
 
 #wrapper .container .side-menu h3{
   background: maroon;
   color: white;
-  font-family: bold;
+  font-weight: bold;
   padding: 10px;
 }
 
@@ -61,9 +74,9 @@
 
 #wrapper .container .main-content{
   width: 58%;
-  border: 3px dashed lightseagreen;
+  /* border: 3px dashed lightseagreen; */
   float: left;
-  background: #fff;
+  background: lightgrey;
 }
 
 #wrapper .container .main-content .art-piece{
@@ -81,23 +94,74 @@
 }
 
 #wrapper .container .main-content .art-piece .artist {
-  font-size: 1.3em;
-  padding: 10px 0;
+  font-size: 1.2em;
+  padding: 15px 0;
   color: #123456;
-  font-family: bold;
+  font-weight: bold;
 }
 
 #wrapper .container .main-content .art-piece .detail {
   text-align: justify;
   font-size: .7em;
   color: #123456;
+  padding-top: 5px;
 }
 
 #wrapper .container .banner {
   width: 20%;
-  border: 3px dashed lightgreen;
+  /* border: 3px dashed lightgreen; */
   float: right;
+  padding-right: 14px;
 }
+
+#wrapper .container .banner h3{
+  color: black;
+  font-size: 1.5em;
+  padding: 10px 0px;
+  line-height: 1.3em;
+  display: block;
+  margin-bottom: 13px;
+}
+
+#wrapper .container .banner .all {
+  color: gray;
+  text-decoration: underline;
+  display: block;
+}
+
+#wrapper .container .banner .love {
+  color: orange;
+  text-decoration: underline;
+  display: block;
+}
+
+#wrapper .container .banner li a{
+  color: black;
+  line-height: 1.5em;
+  font-weight: bold;
+  font-size: .9em;
+}
+
+#wrapper .container .banner li span{
+  display: block;
+  font-size: .7em;
+  padding-bottom: 10px;
+}
+
+
+#wrapper footer{
+  background: #123456;
+  text-align: center;
+  color: white;
+  padding: 10px;
+  font-family: sans-serif;
+  font-size: .8em;
+}
+
+#wrapper footer a{
+  color: white;
+}
+
 
 .clearfix::after {
   content: '';
